@@ -14,17 +14,17 @@
 	针对一个数组，例如[1,2,...,99,100]我们可以划分10个桶bucket[10],这样数组中的每个元素经过key=value/10可以将每个元素对应到某一个桶中，在分别对每一个非空桶进行排序，之后将每一个非空桶连接起来就是排好序的数组了
 + 一个例子
 
-	[34,12,24,44,90,99,87,86,80,89,65,66],可以划分10个桶bucket[10]
-	bucket[0]->NULL
-	bucket[1]->12->NULL
-	bucket[2]->24->NULL
-	bucket[3]->34->NULL
-	bucket[4]->44->NULL
-	bucket[5]->NULL
-	bucket[6]->65->66->NULL
-	bucket[7]->NULL
-	bucket[8]->80->86->87->NULL
-	bucket[9]->90->99->NULL
+		[34,12,24,44,90,99,87,86,80,89,65,66],可以划分10个桶bucket[10]
+		bucket[0]->NULL
+		bucket[1]->12->NULL
+		bucket[2]->24->NULL
+		bucket[3]->34->NULL
+		bucket[4]->44->NULL
+		bucket[5]->NULL
+		bucket[6]->65->66->NULL
+		bucket[7]->NULL
+		bucket[8]->80->86->87->NULL
+		bucket[9]->90->99->NULL
 
 	数据一般是在插入桶的同时进行排序的
 
